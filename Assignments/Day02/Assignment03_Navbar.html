@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment03_Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+
+</head>
+<body>
+<script>
+        var BrandnameElement=React.createElement("h2",{className:"brandname"},"Mybrand")
+        var firstdivElement=React.createElement("div",{className:"firstdiv"},BrandnameElement);
+
+        var anchorItem1=React.createElement("a",{href:"#Home"},"Home");
+        var anchorItem2=React.createElement("a",{href:"#Kids"},"Kids");
+        var anchorItem3=React.createElement("a",{href:"#Men"},"Men");
+        var anchorItem4=React.createElement("a",{href:"#Women"},"Women");
+        var anchorItem5=React.createElement("a",{href:"#Electronics"},"Electronics");
+        var anchorItem6=React.createElement("a",{href:"#Shoes"},"Shoes");
+        var seconddivElement=React.createElement("div",{className:"seconddiv",id:2},[anchorItem1,anchorItem2,anchorItem3,anchorItem4,anchorItem5,anchorItem6]);
+
+        var logoutElement = React.createElement("button", { className: "logout-button", onClick: () => alert('Logging out') }, "Logout");
+        var thirddivElement=React.createElement("div",{className:"thirddiv"},logoutElement);
+
+        
+        var parentdivElement=React.createElement("div",{className:"parentdiv"},[firstdivElement,seconddivElement,thirddivElement]);
+
+        ReactDOM.render(parentdivElement,document.querySelector("body"));
+</script>
+    
+</body>
+</html>
