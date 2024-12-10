@@ -1,0 +1,11 @@
+//Create a function that returns all elements of an array  greater than a given number.
+function getElementsGreaterThan(array, num) {
+    return array.filter(element => element > num);
+  }
+  
+  const numbers = [10, 20, 30, 5, 50, 15, 25];
+  const threshold = 15;
+  
+  console.log("Elements greater than", threshold, ":", getElementsGreaterThan(numbers, threshold));
+  // Output: [20, 30, 50, 25]
+  

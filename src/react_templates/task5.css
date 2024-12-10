@@ -1,0 +1,83 @@
+/* General container styles */
+#1 {
+    
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Header styles */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button styles */
+  button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px 1%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the 'Log In' and 'Sign Up' buttons separately */
+  button:nth-child(2) {
+    background-color: #28a745;
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #218838;
+  }
+  
+  /* Center the buttons */
+  div button {
+    display: inline-block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    div {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
